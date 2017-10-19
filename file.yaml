@@ -6,6 +6,7 @@
       uri:
         url: https://18.216.19.92/api/v2/job_templates/24/  
         method: GET
+        validate_certs: no
     - name: invoke job
       uri:
         url: https://18.216.19.92/api/v2/job_templates/24/launch/
