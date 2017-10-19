@@ -1,6 +1,7 @@
 ---
 - name: POST to Tower API
   hosts: all
+  become: true
   tasks:
     - name: Invoke download Job job_templates
       uri:
