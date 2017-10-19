@@ -1,8 +1,15 @@
 ---
-- hosts: all
-  become: true
+- name: POST to Tower API
+  hosts: all
   tasks:
-    - name: Download File
-      get_url:
-        url: https://github.com/mngk/zip_file/raw/master/test_file.zip
-        dest: /tmp/mng/
+    - name: Invoke download Job job_templates
+      uri:
+        url: https://18.216.19.92/api/v1/job_templates/23/launch/
+        method: POST
+        user: admin
+        password: ansible@123
+        validate_certs: no
+        body: 
+        body_format: json
+#        status_code: 202
+        validate_certs: no 
