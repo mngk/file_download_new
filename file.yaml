@@ -11,6 +11,6 @@
         password: ansible@123
         validate_certs: no
 #        body: 
-        body_format: json
+#        body_format: json
         status_code: 200
         validate_certs: no 
