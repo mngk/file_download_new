@@ -2,14 +2,13 @@
 - name: POST to Tower API
   hosts: all
   tasks:
-    - name: Invoke download Job job_templates
+    - name: get details
+      uri:
+        url: https://18.216.19.92/api/v2/job_templates/24/  
+        method: GET
+    - name: invoke job
       uri:
         url: https://18.216.19.92/api/v2/job_templates/24/launch/
         method: POST
         user: admin
         password: ansible@123
-        validate_certs: no
-        body: 
-        body_format: json
-#        status_code: 202
-        validate_certs: no 
