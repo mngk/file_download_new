@@ -4,7 +4,7 @@
   tasks:
     - name: Invoke download Job job_templates
       uri:
-        url: http://18.216.19.92/api/v2/job_templates/24/launch/
+        url: 18.216.19.92/api/v2/job_templates/24/launch/
         method: POST
         user: admin
         password: ansible@123
