@@ -1,7 +1,8 @@
 ---
 - hosts: all
   become: true
-- name: Download File
-  get_url:
-    url: https://github.com/mngk/zip_file/raw/master/test_file.zip
-    dest: /tmp/mng/
+  tasks:
+    - name: Download File
+      get_url:
+        url: https://github.com/mngk/zip_file/raw/master/test_file.zip
+        dest: /tmp/mng/
