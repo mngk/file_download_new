@@ -12,3 +12,4 @@
         method: POST
         user: admin
         password: ansible@123
+        validate_certs: no
