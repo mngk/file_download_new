@@ -1,6 +1,6 @@
 ---
 - name: POST to Tower API
-  hosts: 18.216.19.92
+  hosts: webservers
   become: true
   tasks:
     - name: Invoke download Job job_templates
