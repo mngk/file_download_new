@@ -5,8 +5,7 @@
   tasks:
     - name: Invoke download Job job_templates
       uri:
-        url: https://18.216.19.92:443/api/v2/job_templates/24/callback/
-        clien_key: 674736fdbad4f6af6fb2f7875becf824
+        url: https://18.216.19.92/api/v2/job_templates/24/launch/
         method: POST
 #        user: admin
 #        password: ansible@123
