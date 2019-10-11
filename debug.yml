@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Display debug msg
+      debug:
+        msg: "This is a test msg from Git Tag V1.0"
