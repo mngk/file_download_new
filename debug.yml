@@ -3,4 +3,4 @@
   tasks:
     - name: Display debug msg
       debug:
-        msg: "This is a test msg from Git Tag V2.0"
+        msg: "This is a test msg from Git master branch"
